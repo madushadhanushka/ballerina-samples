@@ -1,0 +1,9 @@
+- Start the service with `bal new ballerina_service` command
+- Invoke the service with `curl -X GET 'http://localhost:9090/hello/greeting'`
+- Invoke the service for JSON response with `curl -X GET 'http://localhost:9090/hello/greetingInJson'`
+- Invoke the path parameters with `curl -X GET 'http://localhost:9090/hello/users/dhanushka'`
+- Invoke query parameters with `curl -X GET 'http://localhost:9090/hello/users?username=dhanushka&age=29'`
+- Invoke header parameters with `curl -X GET 'http://localhost:9090/hello/userName' -H 'username: dhanushka'`
+- Invoke body parameter with simple text by `curl -X PUT 'http://localhost:9090/hello/users' -d 'dhanushka'`
+- Invoke body parameter with JSON by `curl -X POST 'http://localhost:9090/hello/users' -d '{"name":"dhanushka","age":29}'`
+- Invoke body parameter with XML by `curl -X POST 'http://localhost:9090/hello/usersXml' -d '<user><name>dhanushka</name></user>'`
